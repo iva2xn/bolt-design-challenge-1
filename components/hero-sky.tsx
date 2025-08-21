@@ -49,12 +49,6 @@ export default function HeroSky() {
             <span className="font-light tracking-tight text-white mt-1 block">These designs</span>
         </h1>
 
-        {/* Description */}
-        <p className="text-xs font-light text-white/70 mb-4 leading-relaxed">
-          Free pages, blocks, and components to kickstart your next project.
-          animations, and beautiful effects that respond to your every move.
-        </p>
-
         {/* Buttons */}
         <div className="flex items-center gap-4 flex-wrap">
           <button className="px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-normal text-xs transition-all duration-200 hover:bg-white/10 hover:border-white/50 cursor-pointer">
