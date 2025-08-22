@@ -1,5 +1,19 @@
 import React from 'react';
 import HTMLFlipBook from "react-pageflip";
+import { Figtree, Instrument_Serif } from "next/font/google";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 interface PageContent {
   id: string;
@@ -46,8 +60,6 @@ const Book: React.FC = () => {
       <style
         dangerouslySetInnerHTML={{
           __html: `
-          @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600&display=swap");
-
           .page {
             background: linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%);
             border-radius: 5px;
@@ -63,11 +75,10 @@ const Book: React.FC = () => {
             align-items: center;
             padding: 20px;
             text-align: center;
-            font-family: 'Bricolage Grotesque', sans-serif;
           }
 
           .cover {
-            background: linear-gradient(135deg, #000000 0%, #4b5563 100%);
+            background: #3399FF;
             color: white;
             font-weight: bold;
           }
@@ -101,7 +112,7 @@ const Book: React.FC = () => {
       >
         {/* Front Cover */}
         <div className="page" style={{ background: 'transparent' }}>
-          <div className="page-content cover">
+          <div className={`page-content cover ${instrumentSerif.className}`} style={{ fontStyle: 'italic' }}>
             <img 
               src="https://assets.vercel.com/image/upload/v1662130559/front/bolt/bolt-new-logo.svg" 
               alt="bolt.new Logo" 
@@ -115,7 +126,7 @@ const Book: React.FC = () => {
         {/* Content Pages */}
         {boltTips.map((page) => (
           <div className="page" key={page.id}>
-            <div className="page-content">
+            <div className={`page-content ${figtree.className}`}>
               <h2 className="text-xl font-semibold mb-2">{page.title}</h2>
               <p className="text-base text-gray-800">{page.description}</p>
             </div>
@@ -124,7 +135,7 @@ const Book: React.FC = () => {
 
         {/* Back Cover */}
         <div className="page" style={{ background: 'transparent' }}>
-          <div className="page-content cover">
+          <div className={`page-content cover ${instrumentSerif.className}`} style={{ fontStyle: 'italic' }}>
             <h1>Thanks for Reading</h1>
             <p>Start building at <strong>bolt.new</strong></p>
           </div>
