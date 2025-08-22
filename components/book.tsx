@@ -1,6 +1,7 @@
 import React from 'react';
 import HTMLFlipBook from "react-pageflip";
 import { Figtree, Instrument_Serif } from "next/font/google";
+import Image from 'next/image';
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -25,45 +26,45 @@ const Book: React.FC = () => {
   const boltTips: PageContent[] = [
     {
       id: "001",
-      title: "001",
-      description: "Type bolt.new in your browser to instantly open a coding workspace. No installation required."
+      title: "How it's made",
+      description: "To make this project possible, I used react-pageflip for the book, and mesh-gradient for the background. The content is styled with Tailwind CSS and custom fonts from Google Fonts. The book contains tips for using bolt.new effectively."
     },
     {
       id: "002",
-      title: "002",
-      description: "Describe what you want clearly. The more context you provide, the better the AI can generate accurate code."
+      title: "Good Prompts",
+      description: "A well-crafted prompt is essential for getting the best results from any LLM. Personally, I like to start with a rough, unstructured prompt and let ChatGPT suggest relevant libraries and frameworks. From there, I refine the prompt step by step until I achieve the most effective outcome."
     },
     {
       id: "003",
-      title: "003",
-      description: "bolt.new is perfect for prototyping. Test ideas quickly without worrying about setup overhead."
+      title: "Clean Fonts",
+      description: "Typography plays a huge role in design. When choosing fonts, look for readability first—clean, modern typefaces often work best. Use Google Fonts as a starting point, and combine no more than two typefaces for consistency. Balance headings with bold styles and keep body text simple for better clarity."
     },
     {
       id: "004",
-      title: "004",
-      description: "Ask the AI to explain snippets of code. bolt.new isn’t just a tool for building—it’s also a great way to learn."
+      title: "Color Schemes",
+      description: "AI tools often generate the same purple gradients, which can make projects feel repetitive. Instead, plan your colors carefully—tweakcn.com is a great resource for exploring unique palettes and even testing font pairings. A thoughtful color scheme helps your design stand out and stay consistent."
     },
     {
       id: "005",
-      title: "005",
-      description: "Share your workspace link with teammates. You can brainstorm and fix issues together in real time."
+      title: "Version Control",
+      description: "Always commit your work to GitHub or another version control system. AI and LLMs can still hallucinate or suggest unstable code, so keeping a record of stable versions is essential. Frequent commits ensure you don't lose progress and make it easier to roll back when something breaks."
     },
     {
       id: "006",
-      title: "006",
-      description: "Since it’s made by Vercel, bolt.new integrates seamlessly with deployment workflows. Take projects from idea to live app quickly."
+      title: "Learning",
+      description: "AI can generate code quickly, but the real value comes from studying it. Use code generation as a way to learn—read through the output, break it down, and understand why it works. Treat every snippet as both a tool for building and an opportunity to improve your skills."
     }
   ];
 
   return (
-    <div className="w-[370px] h-[500px] md:w-[740px]">
+    <div className="w-[370px] h-[500px] md:w-[740px]"> 
       <style
         dangerouslySetInnerHTML={{
           __html: `
           @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap');
 
           .page {
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
           }
 
@@ -81,6 +82,7 @@ const Book: React.FC = () => {
             align-items: center;
             padding: 40px 30px;
             text-align: center;
+            border-radius: 12px;
           }
 
           .cover::before {
@@ -195,17 +197,14 @@ const Book: React.FC = () => {
                   alt="bolt.new Logo" 
                   className="w-32 h-auto mb-6 filter brightness-0 invert"
                 />
-                <h1 className="text-4xl font-bold mb-2" style={{ fontFamily: 'Bricolage Grotesque, sans-serif' }}>
-                  bolt.tips
+                <h1 className={`text-4xl font-bold mb-2 ${figtree.className}`}>
+                  My personal tips for using bolt
                 </h1>
-                <p className={`text-lg ${instrumentSerif.className}`} style={{ fontStyle: 'italic', opacity: 0.9 }}>
-                  Code instantly. Powered by AI.
-                </p>
               </div>
               
               <div className="text-center">
                 <p className="text-sm opacity-70">
-                  Made with ❤️ and AI
+                  Made with BOLT and Love
                 </p>
               </div>
             </div>
