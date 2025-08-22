@@ -47,7 +47,7 @@ export default function HeroSky() {
                 </span>
                 <span className="ml-2">Built</span>
                 <br />
-                <span className="font-light tracking-tight text-white mt-1 block">These designs</span>
+                <span className="font-light tracking-tight text-white mt-1 block">This with Bolt</span>
             </h1>
           </div>
         </main>
