@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${figtree.variable} ${instrumentSerif.variable} font-sans antialiased`}>
+      <body className={`${figtree.variable} ${instrumentSerif.variable} font-sans antialiased overflow-hidden`}>
         {children}
       </body>
     </html>
