@@ -235,12 +235,6 @@ const Book: React.FC = () => {
                   Start building at <strong>bolt.new</strong>
                 </p>
               </div>
-              
-              <div className="text-center">
-                <p className="text-sm opacity-70">
-                  Happy coding! 🚀
-                </p>
-              </div>
             </div>
           </div>
         </div>
