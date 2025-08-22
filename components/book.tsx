@@ -25,32 +25,32 @@ const Book: React.FC = () => {
   const boltTips: PageContent[] = [
     {
       id: "001",
-      title: "Quick Start",
+      title: "001",
       description: "Type bolt.new in your browser to instantly open a coding workspace. No installation required."
     },
     {
       id: "002",
-      title: "Use AI Prompts Wisely",
+      title: "002",
       description: "Describe what you want clearly. The more context you provide, the better the AI can generate accurate code."
     },
     {
       id: "003",
-      title: "Experiment Fast",
+      title: "003",
       description: "bolt.new is perfect for prototyping. Test ideas quickly without worrying about setup overhead."
     },
     {
       id: "004",
-      title: "Learn by Example",
+      title: "004",
       description: "Ask the AI to explain snippets of code. bolt.new isn’t just a tool for building—it’s also a great way to learn."
     },
     {
       id: "005",
-      title: "Collaborate Instantly",
+      title: "005",
       description: "Share your workspace link with teammates. You can brainstorm and fix issues together in real time."
     },
     {
       id: "006",
-      title: "Deploy Faster",
+      title: "006",
       description: "Since it’s made by Vercel, bolt.new integrates seamlessly with deployment workflows. Take projects from idea to live app quickly."
     }
   ];
@@ -61,18 +61,15 @@ const Book: React.FC = () => {
         dangerouslySetInnerHTML={{
           __html: `
           @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&display=swap');
-          
+
           .page {
             border-radius: 8px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-            position: relative;
-            overflow: hidden;
           }
 
           .page-content {
             width: 100%;
             height: 100%;
-            position: relative;
           }
 
           .cover {
@@ -84,7 +81,6 @@ const Book: React.FC = () => {
             align-items: center;
             padding: 40px 30px;
             text-align: center;
-            position: relative;
           }
 
           .cover::before {
@@ -112,16 +108,6 @@ const Book: React.FC = () => {
             pointer-events: none;
           }
 
-          .cover-content {
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-          }
-
           .notebook-page {
             background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
             position: relative;
@@ -136,15 +122,15 @@ const Book: React.FC = () => {
             right: 0;
             bottom: 0;
             background-image: 
-              linear-gradient(to right, #fca5a5 40px, transparent 40px),
               repeating-linear-gradient(
                 to bottom,
                 transparent 0px,
-                transparent 23px,
-                #e5e7eb 23px,
-                #e5e7eb 24px
+                transparent 28px,
+                #e5e7eb 28px,
+                #e5e7eb 29px
               );
             pointer-events: none;
+            z-index: 0;
           }
 
           .notebook-content {
@@ -154,21 +140,21 @@ const Book: React.FC = () => {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding-top: 20px;
+            padding-top: 30px;
           }
 
           .page-title {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: #111827;
             margin-bottom: 1rem;
-            line-height: 1.2;
+            line-height: 29px;
           }
 
           .page-description {
             font-size: 1rem;
             color: #374151;
-            line-height: 1.6;
+            line-height: 29px;
             font-weight: 400;
           }
         `,
@@ -196,8 +182,8 @@ const Book: React.FC = () => {
         showPageCorners={true}
         disableFlipByClick={false}
         className=""
-        style={{}}        // 👈 required for typing
-        startPage={0}     // 👈 required for typing
+        style={{}}        //  required for typing
+        startPage={0}     //  required for typing
       >
         {/* Front Cover */}
         <div className="page">
