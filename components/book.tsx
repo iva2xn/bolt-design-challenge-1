@@ -193,7 +193,7 @@ const Book: React.FC = () => {
             <div className="cover-content">
               <div className="flex flex-col items-center">
                 <img 
-                  src="https://assets.vercel.com/image/upload/v1662130559/front/bolt/bolt-new-logo.svg" 
+                  src="bolt-logo.png" 
                   alt="bolt.new Logo" 
                   className="w-32 h-auto mb-6 filter brightness-0 invert"
                 />
