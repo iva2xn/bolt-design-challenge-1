@@ -114,6 +114,8 @@ const Book: React.FC = () => {
             background: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
             position: relative;
             padding: 40px 20px 40px 60px;
+            border-radius: 12px;
+            overflow: hidden;
           }
 
           .notebook-page::before {
@@ -198,7 +200,7 @@ const Book: React.FC = () => {
                   className="w-32 h-auto mb-6 filter brightness-0 invert"
                 />
                 <h1 className={`text-4xl font-bold mb-2 ${figtree.className}`}>
-                  bolt101
+                  My personal tips
                 </h1>
               </div>
               
@@ -232,7 +234,13 @@ const Book: React.FC = () => {
                   Thanks for Reading
                 </h1>
                 <p className={`text-lg ${instrumentSerif.className}`} style={{ fontStyle: 'italic', opacity: 0.9 }}>
-                  Start building with Bolt!
+                  Start building at <strong>bolt.new</strong>
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-sm opacity-70">
+                  Happy coding! 🚀
                 </p>
               </div>
             </div>
