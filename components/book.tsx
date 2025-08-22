@@ -78,8 +78,6 @@ const Book: React.FC = () => {
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             padding: 40px 30px;
             text-align: center;
             border-radius: 12px;
@@ -192,19 +190,19 @@ const Book: React.FC = () => {
         {/* Front Cover */}
         <div className="page">
           <div className="page-content cover">
-            <div className="cover-content">
+            <div className="cover-content flex flex-col justify-between h-full">
               <div className="flex flex-col items-center">
                 <img 
                   src="bolt-logo.png" 
                   alt="bolt.new Logo" 
                   className="w-32 h-auto mb-6 filter brightness-0 invert"
                 />
+              </div>
+              
+              <div className="text-left self-start">
                 <h1 className={`text-4xl font-bold mb-2 ${figtree.className}`}>
                   My personal tips
                 </h1>
-              </div>
-              
-              <div className="text-center">
                 <p className="text-sm opacity-70">
                   Made with BOLT and Love
                 </p>
@@ -228,19 +226,19 @@ const Book: React.FC = () => {
         {/* Back Cover */}
         <div className="page">
           <div className="page-content cover">
-            <div className="cover-content">
+            <div className="cover-content flex flex-col justify-center items-center h-full">
               <div className="flex flex-col items-center justify-center flex-1">
-                <h1 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Bricolage Grotesque, sans-serif' }}>
+                <h1 className={`text-3xl font-bold mb-4 ${figtree.className}`}>
                   Thanks for Reading
                 </h1>
                 <p className={`text-lg ${instrumentSerif.className}`} style={{ fontStyle: 'italic', opacity: 0.9 }}>
-                  Start building at <strong>bolt.new</strong>
+                  Start Shipping with BOLT.NEW
                 </p>
               </div>
               
               <div className="text-center">
                 <p className="text-sm opacity-70">
-                  Happy coding! 🚀
+                  All vibes!
                 </p>
               </div>
             </div>
