@@ -232,7 +232,7 @@ const Book: React.FC = () => {
                   Thanks for Reading
                 </h1>
                 <p className={`text-lg ${instrumentSerif.className}`} style={{ fontStyle: 'italic', opacity: 0.9 }}>
-                  Start building at <strong>bolt.new</strong>
+                  Start building with Bolt!
                 </p>
               </div>
             </div>
