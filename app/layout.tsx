@@ -14,6 +14,7 @@ const instrumentSerif = Instrument_Serif({
   style: ['normal', 'italic'],
   weight: ['400'],
   display: 'swap',
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
