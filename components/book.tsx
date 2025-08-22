@@ -198,7 +198,7 @@ const Book: React.FC = () => {
                   className="w-32 h-auto mb-6 filter brightness-0 invert"
                 />
                 <h1 className={`text-4xl font-bold mb-2 ${figtree.className}`}>
-                  My personal tips for using bolt
+                  bolt101
                 </h1>
               </div>
               
