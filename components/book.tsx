@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import HTMLFlipBook from "react-pageflip";
 import { Figtree, Instrument_Serif } from "next/font/google";
